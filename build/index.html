@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Велосипеды</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+  <section class="main-content">
+    <div class="main-content__image">
+      <span class="main-content__span main-content__span-1">Reduslim</span>
+      <span class="main-content__span main-content__span-2">ECO</span>
+      <div class="main-content__image-wrapper">
+        <picture>
+          <source media="(min-width: 1120px)" type="image/webp" srcset="img/main-img-desk.webp 1x, img/main-img-desk@2x.webp 2x">
+          <source media="(min-width: 1120px)" srcset="img/main-img-desk.png 1x, img/main-img-desk@2x.png 2x">
+          <source type="image/webp" srcset="img/main-img-mob.webp 1x, img/main-img-mob@2x.webp 2x">
+          <img src="img/main-img-mob.png" srcset="img/main-img-mob@2x.png 2x" alt="Редуслим" width="223" height="202">
+        </picture>
+      </div>
+    </div>
+    <div class="main-content__wrapper">
+      <h1 class="main-content__heading">Сделай шаг к выздоровлению</h1>
+      <form class="main-content__form" method="GET">
+        <fieldset class="main-content__form-fieldset">
+          <legend class="visually-hidden">Форма заказа лекарства</legend>
+          <div class="main-content__form-input-name">
+            <label for="name">Ваше <span class="main-content__label-span-color">имя</span></label>
+            <input name="name" id="name" type="text" placeholder="Алексей" required="">
+          </div>
+          <div class="main-content__form-input-phone">
+            <label for="tel">Ваш <span class="main-content__label-span-color">телефон</span></label>
+            <input name="tel" id="tel" type="tel" placeholder="+7 (123) 456 78-90" required="">
+            <select class="main-content__form-select main-content__form-select-ru" name="lang">
+              <option value="rus">RU</option>
+            </select>
+          </div>
+          <button class="main-content__form-button" type="submit">Заказать</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="main-content__footer">
+      <span>Trusted</span>
+      <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="5.71429" width="12.1429" height="9.28572" rx="3" fill="#428A60"></rect>
+        <path d="M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z" stroke="#428A60" stroke-width="2"></path>
+      </svg>
+      <span>Secure</span>
+    </div>
+  </section>
+</body>
+</html>
